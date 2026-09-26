@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Imágenes con Deep Learning</title>
+    <!-- TensorFlow.js y modelo MobileNet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.1"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 4px;
+        }
+
+        #resultado {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Clasificador de Imágenes con IA</h2>
+        <p>Sube una imagen para que el modelo de Deep Learning la analice:</p>
+        <input type="file" id="subirImagen" accept="image/*">
+        <br>
+        <img id="imagenPrevia" src="" alt="" style="display:none;">
+        <p id="resultado">Cargando modelo de IA...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
