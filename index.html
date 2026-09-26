@@ -61,6 +61,12 @@
             margin: 20px 0;
             overflow: hidden;
             background: #09090b;
+            position: relative;
+        }
+
+        #placeholder-text {
+            color: #52525b;
+            position: absolute;
         }
 
         img {
@@ -68,6 +74,8 @@
             max-height: 300px;
             display: none;
             border-radius: 4px;
+            position: relative;
+            z-index: 2;
         }
 
         #resultado {
@@ -91,7 +99,7 @@
         <input type="file" id="subirImagen" accept="image/*">
 
         <div class="img-container">
-            <span id="placeholder-text" style="color: #52525b;">Esperando especímen...</span>
+            <span id="placeholder-text">Esperando especímen...</span>
             <img id="imagenPrevia" src="" alt="Monstruo o item">
         </div>
 
